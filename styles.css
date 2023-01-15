@@ -101,6 +101,7 @@ color: var(--rojo);
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+    margin:10px;
 }
 
 .section-list i{

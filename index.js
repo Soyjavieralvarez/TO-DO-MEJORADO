@@ -26,7 +26,7 @@ const LINE     = realizado ?lineThrough :''
   const elemento = `
   
     <li id="elemento">
-    <i class="far ${REALIZADO}" data="realizado" id="${id}"></i>
+    <i class="fa-solid fa-circle-check ${REALIZADO}" data="realizado" id="${id}"></i>
     <p class="text ${LINE}">${tarea}</p>
     <i class="fas fa-trash de" data="eliminado" id="${id}"></i>
     </li>
@@ -111,17 +111,19 @@ lista.addEventListener('click', function(event){
 
 let data = localStorage.getItem('TODO')
 if(data){
-    LIST=JSON.parse(data)
+    LIST = JSON.parse(data)
     console.log(LIST)
     id = LIST.length
     cargarLista(LIST)
 }else {
     LIST = []
-    id=0
+    id = 0
 }
 
-function cargarLista(DATA){
-    DATA.forEach(function(item){
-        agregarTarea(item.nombre,item.id,item.realizado,item.elmininado)
+//Array para guardar las tareas
+
+function cargarLista(array) {
+    array.forEach(function(item){
+        agregarTarea(item.nombre,item.id,item.realizado,item.eliminado)
     })
 }
