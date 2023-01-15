@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="/index.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2baf3a8f8e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/index.js" defer></script>
+    <title>Lista de cosas pendientes para hacer</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="profile">
+        <div id="date"></div>
+        <h1>Hola, Javier Álvarez</h1>
+        <span>Cuando termines...¡Cervecita al solecito!</span>
+      </div>
+      <div class="add-list">
+        <input type="text" id="input" placeholder="Tarea nueva" />
+        <i id="enter" class="fa-solid fa-circle-plus fa-beat"></i>
+      </div>
+
+      <div class="section-list">
+        <h3>Esto es tooooodo lo que tienes pendiente</h3>
+        <ul id="list">
+          <!-- <li class="list-li">
+            <i class="far fa-circle co" data="done" id="0"></i>
+            <p class="text">Do it!</p>
+            <i class="fa fa-trash de" data="removed" id="0"></i>
+          </li> -->
+        </ul>
+      </div>
+      <!-- <script src="/index.js"></script> -->
+    </div>
+  </body>
 </html>
